@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MKH Official</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white">
+    <header class="bg-green-600 p-4 flex justify-between items-center">
+        <h1 class="text-white text-2xl font-bold"><span class="text-orange-400">M</span>K<span class="text-orange-400">H</span> OFFICIAL</h1>
+        <nav>
+            <ul class="flex space-x-4">
+                <li><a href="Home.html" class="text-white hover:text-red-500">Home</a></li>
+                <li><a href="shop.html" class="text-white hover:text-red-500">Shop</a></li>
+                <li><a href="Contact.html" class="text-white hover:text-red-500">Contact</a></li>
+                <li><a href="about.html" class="text-white hover:text-red-500">About</a></li>
+                <li><button class="text-white text-2xl">&#9776;</button></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="relative">
+        <video id="heroVideo" autoplay muted loop class="w-full h-96 object-cover">
+            <source src="video1.mp4" type="video/mp4">
+        </video>
+        <div class="absolute inset-0 flex flex-col items-center justify-center text-black text-center">
+            <h2 class="text-3xl font-semibold">Elegant Fashion & Accessories</h2>
+            <p class="text-lg">Find the best styles for every occasion.</p>
+        </div>
+    </section>
+    
+    <section class="p-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <div class="bg-azure border border-dashed border-black p-4 rounded shadow-lg hover:shadow-2xl transition">
+            <img src="Suit.webp" alt="Classic Suit" class="w-full h-48 object-cover">
+            <h3 class="text-lg font-semibold mt-2">Classic Suit</h3>
+            <p class="text-xl font-bold">$310</p>
+            <button class="mt-2 bg-orange-500 text-white py-2 px-4 rounded hover:bg-green-600 transition">Add to Cart</button>
+        </div>
+        <div class="bg-azure border border-dashed border-black p-4 rounded shadow-lg hover:shadow-2xl transition">
+            <img src="Jacket.avif" alt="Stylish Jacket" class="w-full h-48 object-cover">
+            <h3 class="text-lg font-semibold mt-2">Stylish Jacket</h3>
+            <p class="text-xl font-bold">$245</p>
+            <button class="mt-2 bg-orange-500 text-white py-2 px-4 rounded hover:bg-green-600 transition">Add to Cart</button>
+        </div>
+        <div class="bg-azure border border-dashed border-black p-4 rounded shadow-lg hover:shadow-2xl transition">
+            <img src="Watch.webp" alt="Luxury Watch" class="w-full h-48 object-cover">
+            <h3 class="text-lg font-semibold mt-2">Luxury Watch</h3>
+            <p class="text-xl font-bold">$390</p>
+            <button class="mt-2 bg-orange-500 text-white py-2 px-4 rounded hover:bg-green-600 transition">Add to Cart</button>
+        </div>
+    </section>
+</body>
+</html>

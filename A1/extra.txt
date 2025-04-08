@@ -1,0 +1,40 @@
+
+.product-title {
+    font-size: 1.5em;
+    color: #333333;
+}
+.product-description {
+    font-size: 1em;
+    color: #666666;
+}
+
+.buy-button {
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.buy-button:hover {
+    background-color: #4cae4c;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #35424a;
+    color: #ffffff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .product {
+        width: 100%;
+    }
+}
