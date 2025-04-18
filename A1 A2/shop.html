@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - MKH OFFICIAL</title>
+    <link rel="stylesheet" href="shop.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>MKH OFFICIAL</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html" class="active">Shop</a></li>
+                    <li><a href="cart.html">Cart</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+            <div class="header-icons">
+                <a href="#"><i class="fas fa-search"></i></a>
+                <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+                <a href="#"><i class="fas fa-user"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="shop-header">
+            <div class="container">
+                <h1>Our Products</h1>
+                <p>Discover our premium collection</p>
+            </div>
+        </section>
+
+        <section class="shop-content">
+            <div class="container">
+                <div class="shop-toolbar">
+                    <div class="filter-toggle">
+                        <button id="filterBtn"><i class="fas fa-filter"></i> Filters</button>
+                    </div>
+                    <div class="sort-options">
+                        <label for="sort">Sort by:</label>
+                        <select id="sort">
+                            <option value="default">Default</option>
+                            <option value="price-low">Price: Low to High</option>
+                            <option value="price-high">Price: High to Low</option>
+                            <option value="name">Name</option>
+                            <option value="newest">Newest</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="shop-grid">
+                    <aside class="filters-sidebar" id="filtersSidebar">
+                        <div class="filter-section">
+                            <h3>Categories</h3>
+                            <ul class="filter-list">
+                                <li><a href="#" class="active">All Products</a></li>
+                                <li><a href="#">Men's Fashion</a></li>
+                                <li><a href="#">Women's Fashion</a></li>
+                                <li><a href="#">Accessories</a></li>
+                                <li><a href="#">Footwear</a></li>
+                            </ul>
+                        </div>
+                        <div class="filter-section">
+                            <h3>Price Range</h3>
+                            <div class="price-range">
+                                <input type="range" min="0" max="500" value="500" class="slider" id="priceRange">
+                                <div class="price-values">
+                                    <span>$0</span>
+                                    <span>$500</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter-section">
+                            <h3>Size</h3>
+                            <div class="size-options">
+                                <button>S</button>
+                                <button>M</button>
+                                <button>L</button>
+                                <button>XL</button>
+                            </div>
+                        </div>
+                        <div class="filter-section">
+                            <h3>Color</h3>
+                            <div class="color-options">
+                                <button style="background-color: #000;"></button>
+                                <button style="background-color: #fff; border: 1px solid #ddd;"></button>
+                                <button style="background-color: #ff6b6b;"></button>
+                                <button style="background-color: #4e9af1;"></button>
+                                <button style="background-color: #6bbd68;"></button>
+                            </div>
+                        </div>
+                        <button class="btn apply-filters">Apply Filters</button>
+                    </aside>
+
+                    <div class="products-grid">
+                        <div class="product-card">
+                            <div class="product-badge">New</div>
+                            <img src="Premium T-Shirt.webp" alt="Premium T-Shirt">
+                            <div class="product-info">
+                                <h3>Premium T-Shirt</h3>
+                                <div class="price">$29.99</div>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <span>(24)</span>
+                                </div>
+                            </div>
+                            <button class="btn">Add to Cart</button>
+                        </div>
+                        
+                        <!-- More product cards... (8 total for demo) -->
+                        <div class="product-card">
+                            <img src="Designer Jeans.jpg" alt="Designer Jeans">
+                            <div class="product-info">
+                                <h3>Designer Jeans</h3>
+                                <div class="price">$59.99 <span class="old-price">$79.99</span></div>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <span>(18)</span>
+                                </div>
+                            </div>
+                            <button class="btn">Add to Cart</button>
+                        </div>
+                        
+                        <div class="product-card">
+                            <img src="Stylish Watch.jpg" alt="Stylish Watch">
+                            <div class="product-info">
+                                <h3>Stylish Watch</h3>
+                                <div class="price">$89.99</div>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <span>(42)</span>
+                                </div>
+                            </div>
+                            <button class="btn">Add to Cart</button>
+                        </div>
+                        
+                        <div class="product-card">
+                            <div class="product-badge">Sale</div>
+                            <img src="Leather Bag.jpg" alt="Leather Bag">
+                            <div class="product-info">
+                                <h3>Leather Bag</h3>
+                                <div class="price">$79.99 <span class="old-price">$99.99</span></div>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <span>(31)</span>
+                                </div>
+                            </div>
+                            <button class="btn">Add to Cart</button>
+                        </div>
+                        
+                        <div class="product-card">
+                            <img src="Casual Sneakers.jpg" alt="Casual Sneakers">
+                            <div class="product-info">
+                                <h3>Casual Sneakers</h3>
+                                <div class="price">$49.99</div>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <span>(15)</span>
+                                </div>
+                            </div>
+                            <button class="btn">Add to Cart</button>
+                        </div>
+                        
+                        <div class="product-card">
+                            <img src="Denim Jacket.jpg" alt="Denim Jacket">
+                            <div class="product-info">
+                                <h3>Denim Jacket</h3>
+                                <div class="price">$69.99</div>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <span>(27)</span>
+                                </div>
+                            </div>
+                            <button class="btn">Add to Cart</button>
+                        </div>
+                        
+                        <div class="product-card">
+                            <div class="product-badge">Popular</div>
+                            <img src="Wireless Headphones.jpg" alt="Wireless Headphones">
+                            <div class="product-info">
+                                <h3>Wireless Headphones</h3>
+                                <div class="price">$119.99</div>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <span>(38)</span>
+                                </div>
+                            </div>
+                            <button class="btn">Add to Cart</button>
+                        </div>
+                        
+                        <div class="product-card">
+                            <img src="Silk Scarf.jpg" alt="Silk Scarf">
+                            <div class="product-info">
+                                <h3>Silk Scarf</h3>
+                                <div class="price">$39.99</div>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <span>(12)</span>
+                                </div>
+                            </div>
+                            <button class="btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pagination">
+                    <a href="#" class="active">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#"><i class="fas fa-chevron-right"></i></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Same footer as index.html -->
+    </footer>
+
+    <script>
+        // Toggle filters sidebar on mobile
+        document.getElementById('filterBtn').addEventListener('click', function() {
+            document.getElementById('filtersSidebar').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
